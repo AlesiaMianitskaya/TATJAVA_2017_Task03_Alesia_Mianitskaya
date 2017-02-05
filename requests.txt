@@ -1,0 +1,5 @@
+add_news Film 'Zootopia' Clark Spencer 10.21.2016
+find_by_title La La Land
+find_by_author Ayn Rand
+find_by_news Film 'Zootopia' Clark Spencer 10.21.2016
+find_by_category Film
