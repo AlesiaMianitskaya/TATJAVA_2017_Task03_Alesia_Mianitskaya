@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog>
+    <category name="Film">
+        <title>La La Land</title>
+        <author>Damien Chazelle</author>
+        <date>01.15.2017</date>
+    </category>
+    <category name="Book">
+        <title>The Fountainhead</title>
+        <author>Ayn Rand</author>
+        <date>01.18.2017</date>
+    </category>
+    <category name="CD">
+        <title>Yellow Submarine</title>
+        <author>The Beatles</author>
+        <date>01.21.2017</date>
+    </category>
+    <category name="Film">
+        <title>Zootopia</title>
+        <author>10.21.2016</author>
+        <date>Clark Spencer</date>
+    </category>
+</catalog>
