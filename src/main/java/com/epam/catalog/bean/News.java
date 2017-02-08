@@ -3,7 +3,7 @@ package com.epam.catalog.bean;
 /**
  * Contains information about news in catalog
  */
-public class News {
+public class News {//+Serializable - тогда будет настоящий полный bean)
   private String category;
   private String title;
   private String author;
