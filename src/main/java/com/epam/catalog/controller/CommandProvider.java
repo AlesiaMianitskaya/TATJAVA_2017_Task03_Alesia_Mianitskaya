@@ -12,7 +12,7 @@ import java.util.Map;
 public class CommandProvider {
   private final Map<CommandName, Command> box = new HashMap<>();
 
-  CommandProvider() {
+  CommandProvider() {// public класс, а единственный конструктор - friendly. :)
     box.put(CommandName.ADD_NEWS, new AddNews());
     box.put(CommandName.FIND_BY_TITLE, new FindByTitle());
     box.put(CommandName.FIND_BY_AUTHOR, new FindByAuthor());
