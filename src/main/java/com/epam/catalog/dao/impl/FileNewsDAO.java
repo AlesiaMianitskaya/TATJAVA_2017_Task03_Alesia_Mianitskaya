@@ -43,7 +43,7 @@ public class FileNewsDAO implements NewsDAO {
    */
   @Override
   public boolean addNews(News news) throws DAOException {
-    if (validateAddedNews(news)) {
+    if (validateAddedNews(news)) {// в дао не надо валидировать параметры, их уже на стороне сервера провалидировал сервис
       throw new DAOException("It is invalid to add news.");
     }
     boolean resultAdd;
@@ -246,6 +246,8 @@ public class FileNewsDAO implements NewsDAO {
    * @throws DAOException exception when the news is not found
    */
   private static void printFound(ArrayList<News> foundList) throws DAOException {
+    // это метод НЕ ДЛЯ ДАО
+    // что-то отобразить может только Вид
     if (foundList.isEmpty()) {
       throw new DAOException();
     } else {
