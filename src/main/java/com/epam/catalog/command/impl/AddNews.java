@@ -10,7 +10,7 @@ import com.epam.catalog.service.factory.ServiceFactory;
  * Execution command - add news
  */
 public class AddNews implements Command {
-  private final String separator = " ";
+  private final String separator = " ";// final- поля объявляются в верхнем регистре SEPARATOR
   private final String separatorTitle = "\'";
 
   /**
