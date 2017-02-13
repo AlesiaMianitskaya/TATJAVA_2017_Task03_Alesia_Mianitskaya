@@ -19,7 +19,8 @@ public class Controller {
     String commandName;
     Command executionCommand;
 
-    commandName = request.split(separator)[0];
+    commandName = request.split(separator)[0];// уString есть  перегруженный split , задающий limit частей
+    // он будет здесь умеснее
     executionCommand = commandProvider.getCommand(commandName);
 
     String response;

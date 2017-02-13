@@ -24,7 +24,9 @@ public class NewsServiceImpl implements NewsService {
     boolean notAuthor = news.getAuthor().isEmpty() || (news.getAuthor() == null);
     boolean notDate = news.getDate().isEmpty() || (news.getDate() == null);
 
-    if (notCategory) {
+    if (notCategory) {// логика выполнения кода
+      // например, каталог пришел пустым => метод сгенерирует исключительную ситуацию
+      // ? - зачем было тратить время на другие проверки?
       throw new ServiceException("News' category is not valid.");
     }
     if (notTitle) {
